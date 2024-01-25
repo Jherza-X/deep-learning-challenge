@@ -15,7 +15,7 @@ The purpose of this analysis is to develop a deep learning model using TensorFlo
     Removed Variables: 'EIN', 'NAME' were removed as they are neither targets nor features.
 
 ## Compiling, Training, and Evaluating the Model:
- * Neurons, Layers, and Activation Functions: In this step the first model had the next characteristics: 
+ * Neurons, Layers, and Activation Functions: In this step the first model   had the next characteristics: 
     * First Hidden Layer: 8 neurons, activation function = [relu]
     * Additional Hidden Layer 1: 5 neurons, activation function = [relu]
     * Output Layer: Activation function = 'sigmoid' (for binary classification)
@@ -33,6 +33,15 @@ The purpose of this analysis is to develop a deep learning model using TensorFlo
     'units_5': 5,
     
     I tested this paremeters in "AlphabetSoupCharity_Optimization.ipynb", also changing the bin size. However the accuracy did not improve. 
+
+    After tutor feedback I tested different number of layers including 30 neurons for the first layer as approximately the half of the number of input features you have. It ran with for layers during 100 epochs. The results yielded Loss: 0.5506576299667358, Accuracy: 0.7384839653968811.
+
+    Then I ran a model with 6 layers and the following number of neuron in each layer: 35, 25, 10, 15, 10, 10. Ran for 100 epochs. The outcome was Loss: 0.5589349865913391, Accuracy: 0.7396501302719116. This improved the previous test.
+
+
+
+
+
 ## Summary:
 The deep learning model was constructed and trained to predict the success of charitable organizations. The best results are 0.739504396915435 as overall performance. Based on the analysis, a recommendation for improving classification accuracy could involve trying a different model architecture, cleaning outlayers in the data, and fine-tuning hyperparameters. 
 
